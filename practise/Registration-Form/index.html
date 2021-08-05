@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body onload="whileLogin()">
+
+
+
+    <div class="main">
+        <!-- Navbar -->
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Welcome Heading -->
+                <h1 id="welcome" class="m-auto text-light"></h1>
+                <button type="button" class="btn btn-outline-light" id="logoutBtn"
+                    onclick="onLogout()">Logout</button>
+            </div>
+        </nav>
+
+        <!-- Side Bar -->
+        <div class="offcanvas w-25 p-3 offcanvas-start text-light sideBar" tabindex="-1" id="offcanvasWithBackdrop"
+            aria-labelledby="offcanvasWithBackdropLabel">
+            <button type="button" class="btn-close text-reset position-absolute top-0 end-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="offcanvas-header">
+                <div class="container-fluid">
+                    <!-- Profile Image -->
+                    <img src="./images/profilepic.png" alt="Profile Picture" class="bg-primary profile-image">
+                    <!-- Full name -->
+                    <h5 class="offcanvas-title ms-2 mt-3" id="offcanvasWithBackdropLabel"></h5>
+                    <!-- number -->
+                    <h5 class="offcanvas-title ms-2 mt-3" id="numBar"></h5>
+                    <!-- City -->
+                    <h5 class="offcanvas-title ms-2 mt-3" id="cityBar"></h5>
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <!-- <p>.....</p> -->
+            </div>
+        </div>
+
+
+
+        <div class="form bg-white p-3 m-5 my-2">
+            <h3>Create Post</h3>
+            <input type="text" class="form-control" id="floatingTitle" placeholder="Title">
+            <textarea class="form-control mt-3" placeholder="Description" id="floatingDescription"
+                style="height: 100px"></textarea>
+
+            <button type="button" class="btn btn-outline-success mt-3" id="postBtn" onclick="onPostCreation()">Post</button>
+
+            <!-- <div class="input-group mt-3">
+                <input type="file" class="form-control" id="getImageURL">
+                <button class="btn btn-outline-success" type="button" onclick="onPostCreation()"
+                    id="inputGroupFileAddon04">Post</button>
+            </div> -->
+        </div>
+
+
+        <div id="postCard"></div>
+        <!-- Card to show -->
+            <!-- <div class="w-25 mt-3 mx-auto card mb-3">
+                <button type="button" class="position-absolute top-0 end-0 btn-close" onclick="deleteItem(this)"></button>
+                <img src="./images/signin-image.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div> -->
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</html>

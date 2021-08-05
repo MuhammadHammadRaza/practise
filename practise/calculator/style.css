@@ -1,0 +1,38 @@
+main {
+    background-color: grey;
+    border: 3px solid lightgrey;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.btn, .clearBtn, .input {
+    text-align: center;
+}
+
+.btn button {
+    border: 0.5px solid black;
+    width: 10%;
+    margin: 3px auto;
+    background-color: lightgrey;
+}
+
+.input input, .clearBtn button {
+    background-color: lightgrey;
+    border: 0.5px solid black;
+    width: 41%;
+    margin: 3px auto;
+}
+
+.input input {
+    background-color: white;
+}
+
+#outputBar {
+    text-align: right;
+    width: 31%;
+}
+
+#outputSignBar {
+    width: 9%;
+    text-align: center;
+}

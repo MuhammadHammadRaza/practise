@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#" onsubmit="setItem()">
+        <p><label for="name">Name: </label><input id="name" type="text"></p>
+        <p>Gender: <label for="gender">Male <input type="radio" name="gender" value="Male" id="male"></label>
+            <label for="female">Female </label><input type="radio" name="gender" value="Female" id="female">
+        </p>
+        <p><label for="address">Address: </label><textarea name="address" id="address" cols="25" rows="2"></textarea>
+        </p>
+        <p>Education:
+            <select name="education" id="education">
+                <option value="Matriculation">Matric</option>
+                <option value="Intermediate">Inter</option>
+                <option value="Graduate">Graduate</option>
+            </select>
+        </p>
+        <p>Profession:
+            <select name="profession" id="profession">
+                <option value="Student">Student</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Developer">Developer</option>
+            </select>
+        </p>
+        <input type="submit" value="submit" id="submit">
+    </form>
+    <br>
+    <button onclick="getData()" id="getData">Retrieve Data</button>
+    <br>
+    <br>
+    <table border="1" , cellspacing="0" , cellpadding="5px"></table>
+</body>
+<script src="app.js"></script>
+
+</html>
